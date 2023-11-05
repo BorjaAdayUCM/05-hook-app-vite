@@ -6,12 +6,12 @@ export const useCounter = (initialValue = 0, min = -Infinity, max = Infinity, va
 
     const increment = () => {
         if (counter === max) return;
-        setCounter(counter + valueIncrement);
+        setCounter((current) => current + valueIncrement);
     }
 
     const decrement = () => {
         if (counter === min) return;
-        setCounter(counter - valueIncrement);
+        setCounter((current) => current - valueIncrement);
     }
 
     const reset = () => {

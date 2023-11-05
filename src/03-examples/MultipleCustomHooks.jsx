@@ -5,7 +5,7 @@ import {LoadingEpisode, Episode} from '.'
 export const MultipleCustomHooks = () => {
 
     const {counter, increment} = useCounter(1, 1, 51, 1);
-    const {data, isLoading, hasError} = useFetch(`https://rickandmortyapi.com/api/episode/${counter}`)
+    const {data, isLoading} = useFetch(`https://rickandmortyapi.com/api/episode/${counter}`)
     const {name, air_date} = !!data && data
 
     return (

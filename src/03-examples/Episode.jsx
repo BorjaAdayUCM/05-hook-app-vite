@@ -14,7 +14,6 @@ export const Episode = ({episode, name, air_date}) => {
             width,
             height
         })
-        console.log();
 
     }, [episode])
 
